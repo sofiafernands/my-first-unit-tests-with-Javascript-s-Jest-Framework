@@ -14,14 +14,14 @@ const fromEuroToDollar = function(valueInEuro){
 
 const fromDollarToYen = function(valueInDollar) {
     //convertimos el valor a yen
-    let valueInYen = (valueInDollar *  1/oneEuroIs.USD) * oneEuroIs.JPY;
+    let valueInYen = (valueInDollar *  1/oneEuroIs.USD) * oneEuroIs.JPY; //1 euro entre 1.2 dolares  127,9 = 106,583333333....
     //retornamos el valor
 return valueInYen;
 }
 
 const fromYenToPound = function (valueInYen) {
     //convertimos el valor en pound(libras)
-    let valueInPound = (valueInYen/oneEuroIs.JPY) * oneEuroIs.GBP;
+    let valueInPound = (valueInYen/oneEuroIs.JPY) * oneEuroIs.GBP;// 5000 yen entre 127,9 por 0.8 = 31,274433.....
     return valueInPound
 }
 
